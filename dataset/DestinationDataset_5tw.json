@@ -1,0 +1,41 @@
+{
+	"name": "DestinationDataset_5tw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "logDatabaseConn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "actor_key",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "actor_id",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "actor_name",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "actor_movie_cnt",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "actors"
+		}
+	}
+}
